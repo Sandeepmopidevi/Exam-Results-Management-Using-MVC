@@ -1,0 +1,50 @@
+﻿@model IEnumerable<ExamResultsManagement.Models.StudentResult>
+
+<h2>Student Results</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Student Name</th>
+            <th>Subject 1</th>
+            <th>Marks 1</th>
+            <th>Subject 2</th>
+            <th>Marks 2</th>
+            <th>Subject 3</th>
+            <th>Marks 3</th>
+            <th>Subject 4</th>
+            <th>Marks 4</th>
+            <th>Subject 5</th>
+            <th>Marks 5</th>
+            <th>Exam Month</th>
+            <th>Exam Year</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var result in Model)
+        {
+            <tr>
+                <td>@result.StudentName</td>
+                <td>@result.Subject1</td>
+                <td>@result.Marks1</td>
+                <td>@result.Subject2</td>
+                <td>@result.Marks2</td>
+                <td>@result.Subject3</td>
+                <td>@result.Marks3</td>
+                <td>@result.Subject4</td>
+                <td>@result.Marks4</td>
+                <td>@result.Subject5</td>
+                <td>@result.Marks5</td>
+                <td>@result.ExamMonth</td>
+                <td>@result.ExamYear</td>
+                <td>
+                    <a href="/StudentResults/Edit/@result.Id" class="btn btn-primary">Edit</a> |
+                    <a href="/StudentResults/Delete/@result.Id" class="btn btn-danger">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<a href="/StudentResults/Create" class="btn btn-primary">Add Result</a>

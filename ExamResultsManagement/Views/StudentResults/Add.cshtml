@@ -1,0 +1,59 @@
+﻿@model ExamResultsManagement.Models.StudentResult
+
+<h2>Add Student Result</h2>
+
+<form asp-action="Create" method="post">
+    <div class="form-group">
+        <label asp-for="StudentName"></label>
+        <input asp-for="StudentName" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="Subject1"></label>
+        <input asp-for="Subject1" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="Marks1"></label>
+        <input asp-for="Marks1" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="Subject2"></label>
+        <input asp-for="Subject2" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="Marks2"></label>
+        <input asp-for="Marks2" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="Subject3"></label>
+        <input asp-for="Subject3" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="Marks3"></label>
+        <input asp-for="Marks3" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="Subject4"></label>
+        <input asp-for="Subject4" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="Marks4"></label>
+        <input asp-for="Marks4" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="Subject5"></label>
+        <input asp-for="Subject5" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="Marks5"></label>
+        <input asp-for="Marks5" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="ExamMonth"></label>
+        <input asp-for="ExamMonth" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="ExamYear"></label>
+        <input asp-for="ExamYear" class="form-control" />
+    </div>
+    <button type="submit" class="btn btn-primary">Add</button>
+</form>
