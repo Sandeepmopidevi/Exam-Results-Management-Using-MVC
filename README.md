@@ -58,4 +58,4 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ## Contact
 
-For any questions or suggestions, please contact Sandeep Mopidevi at (mailto:asksandeep@gmail.com).
+For any questions or suggestions, please contact Sandeep Mopidevi at (mailto:asksandeepsd@gmail.com).
